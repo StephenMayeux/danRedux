@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import counterReducer from './counter'
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  counter: counterReducer
 });
 
 export default rootReducer;
